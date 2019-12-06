@@ -36,22 +36,16 @@ li{
 .header-menu li{
     padding-left: 54px;
 }
-.shop{
-    margin-left: 50px;
-}
-.search{
-    margin-left: 40px;
-}
 .header-menu a{
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    padding-bottom: 12px;
+    padding-bottom: 5px;
 }
 .header-menu a:hover{
     color: #f7cb88;
-    border-bottom: 3px solid #f7cb88;
+    border-bottom: 2px solid #f7cb88;
 }
 .header__content{
     margin-top: 160px;
@@ -64,6 +58,13 @@ li{
     color: #ffffff;
     padding-bottom: 10px;
 }
+
+
+.header__line-item a :hover{
+    color: #f38181;
+    transition: 3s;
+}
+
 .header__content-welcome{
     font-family: 'Montserrat', sans-serif;
     font-size: 150px;
@@ -86,6 +87,11 @@ li{
 .header__content-btn a{
     color: #ffffff;
 }
+.header__content-btn a:hover{
+    color: #f38181;
+    transition: 3s;
+}
+
 .header__content-btn{
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -113,6 +119,7 @@ li{
 .header__line{
     border: 3px solid rgba(255,255,255,0.3);
 }
+
 .header__line-text{
     font-weight: 400;
     font-size: 19px;
@@ -160,6 +167,9 @@ li{
 }
 .about__item{
     margin-right: 30px;
+}
+.about__inner.about {
+    height: 250px;
 }
 .about__item:hover{
     box-shadow:
@@ -436,6 +446,9 @@ li{
     line-height: 24px;
     color: #b3b3b3;
     font-style: italic;
+}
+.about__item.team__about{
+    height: 470px;
 }
 .team__wrapper{
     padding-bottom: 120px;

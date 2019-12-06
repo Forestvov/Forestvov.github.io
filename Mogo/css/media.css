@@ -1,0 +1,36 @@
+@media (max-width: 1080px) {
+    .header__line-inner{
+        display: none;
+    }
+
+
+
+}
+@media (max-width: 996px) {
+
+    .btn_burger::before{
+        display: block;
+        position: relative;
+    }
+    .header-menu li {
+        margin-left: 0;
+    }
+    .header-menu{
+        display: none;
+        position: absolute;
+        top: 87px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #000000;
+        z-index: 5;
+    }
+    .header-menu a{
+        display: block;
+        padding: 10px 0;
+        border-bottom: 1px solid #000000;
+        background-color: #fff;
+
+    }
+}
