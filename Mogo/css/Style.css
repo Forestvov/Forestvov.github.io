@@ -45,7 +45,8 @@ li{
 }
 .header-menu a:hover{
     color: #f7cb88;
-    border-bottom: 2px solid #f7cb88;
+
+    transition-duration:2s;
 }
 .header__content{
     margin-top: 160px;
@@ -59,11 +60,18 @@ li{
     padding-bottom: 10px;
 }
 
-
-.header__line-item a :hover{
-    color: #f38181;
-    transition: 3s;
+.header__line-item a{
+    color: #ffffff;
+    border-top: 3px solid #ffffff;
+    opacity: 0.6;
 }
+.header__line-item a:hover{
+    color: #ffffff;
+    border-top: 3px solid #f38181;
+    opacity: 1;
+    transition-duration:2s;
+}
+
 
 .header__content-welcome{
     font-family: 'Montserrat', sans-serif;
@@ -85,11 +93,14 @@ li{
 
 }
 .header__content-btn a{
+    padding: 15px 30px;
     color: #ffffff;
+    border: 3px solid #ffffff;
 }
 .header__content-btn a:hover{
     color: #f38181;
-    transition: 3s;
+    border: 3px solid #f38181;
+    transition-duration:2s;
 }
 
 .header__content-btn{
@@ -97,10 +108,8 @@ li{
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 700;
-    width: 160px;
-    height: 40px;
-    padding: 9px;
-    border: 3px solid #ffffff;
+
+
     margin: 0 auto 155px;
 }
 .header__line-inner{
@@ -109,9 +118,7 @@ li{
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
 }
-.header__line-item a{
-    color: #ffffff;
-}
+
 .header__line-inner span{
     font-weight: 700;
     font-size: 23px;
@@ -152,9 +159,9 @@ li{
 }
 .about__text{
     width: 955px;
-    color: #999999;
+    color: #b3b3b3;
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 15px;
     line-height: 24px;
     margin: 0 auto;
