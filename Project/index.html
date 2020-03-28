@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header class="header">
+                <div class="header__top">
+                    <div class="container">
+                        <ul class="header__top-list">
+                            <li><a href="#">Мой профиль</a></li>
+                            <li><a href="#">Мои коммерческие предложения</a></li>
+                            <li><a href="#">Счета</a></li>
+                            <li><a href="#">Александров И.Е</a></li>
+                            <li><a href="#">| Выйти</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__main">
+                    <div class="container">
+                        <div class="header__main-inner">
+                            <div class="header_main-left">
+                                <div class="header_main-logo">
+                                    <a href="#"><img src="images/logo.png" alt=""></a>
+                                </div>
+                                <div class="header__main-text">
+                                    Производство и продажа
+                                    щитов автоматики
+                                </div>
+                            </div>
+                            <div class="header_main-right">
+                                <a class="email" href="#">info@gkavtomatika.ru</a>
+                                <a class="phone" href="tel:+78129850550">+7 (812) 985-05-50</a>
+                                <div class="header_main-btn">
+                                    <a href="#">Заказать звонок</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <div class="container">
+                        <nav class="header__menu">
+                            <li><a class="active" href="#">Вентиляция</a></li>
+                            <li><a href="#">Индивидуальные тепловые пункты</a></li>
+                            <li><a href="#">Противопожарная вентиляция</a></li>
+                            <li>
+                                <form class="header-form">
+                                    <input type="text" placeholder="Поиск" required>
+                                    <button class="btn-search" type="submit"></button>
+                                </form>
+                            </li>
+                            <li><a href="#">Доставка и оплата</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <section class="product__page">
+                <div class="container">
+                    <div class="product__page-inner">
+                        <aside class="product__page-aside aside__product">
+                            <div class="aside__product-title">
+                                Фильтр по товарам
+                            </div>
+                            <ul class="accordion accordion--big" data-accordion="open">
+                                <li>
+                                    <div class="accordion-header">Щиты управления</div>
+                                    <div class="accordion-body">
+                                        <ul class="accordion accordion--semi" data-accordion="open">
+                                            <li>
+                                                <div class="accordion-header accordion-header--semi">Приточной вентиляции</div>
+                                                <div class="accordion-body">
+                                                    <ul class="accordion" data-accordion="open">
+                                                        <li>
+                                                          <div class="accordion-header accordion-header--min">Вентилятор</div>
+                                                          <div class="accordion-body">
+                                                              <form>
+                                                                <input type="radio" id="one-phase" name="phase">
+                                                                <label for="one-phase">1-фазный (~220 В)</label>
+                                                                <input type="radio" id="three-phase" name="phase">
+                                                                <label for="three-phase">3-фазный (~380 В)</label>
+                                                              </form>
+                                                          </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="accordion-header accordion-header--min">Тип пуска вентилятора</div>
+                                                            <div class="accordion-body">
+                                                                <form>
+                                                                  <input type="radio" id="converter" name="type">
+                                                                  <label for="converter">преобразователь частоты</label>
+                                                                  <input type="radio" id="straight" name="type">
+                                                                  <label for="straight">прямой пуск</label>
+                                                                  <input type="radio" id="regulator" name="type">
+                                                                  <label for="regulator">регулятор скорости</label>
+                                                                </form>
+                                                            </div>
+                                                          </li>
+                                                          <li>
+                                                            <div class="accordion-header accordion-header--min">Тип калорифера</div>
+                                                            <div class="accordion-body">
+                                                                <form>
+                                                                  <input type="radio" id="one-phase" name="phase">
+                                                                  <label for="one-phase">преобразователь частоты</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">прямой пуск</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">регулятор скорости</label>
+                                                                </form>
+                                                            </div>
+                                                          </li>
+                                                          <li>
+                                                            <div class="accordion-header accordion-header--min">Вентилятор</div>
+                                                            <div class="accordion-body">
+                                                                <form>
+                                                                  <input type="radio" id="one-phase" name="phase">
+                                                                  <label for="one-phase">преобразователь частоты</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">прямой пуск</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">регулятор скорости</label>
+                                                                </form>
+                                                            </div>
+                                                          </li>
+                                                      </ul>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+
+
+
+                                    </div>
+
+
+
+
+                                </li>
+
+
+
+
+
+
+
+
+
+
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <footer class="footer">
+            <div class="container">
+
+
+
+
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
