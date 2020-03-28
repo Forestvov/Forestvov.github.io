@@ -75,16 +75,17 @@
                                 Фильтр по товарам
                             </div>
                             <ul class="accordion accordion--big" data-accordion="open">
+                                <!-- Первый блок -->
                                 <li>
-                                    <div class="accordion-header">Щиты управления</div>
+                                    <div class="accordion-header">Щиты управления <div class="arrow-btn"><img src="images/icon/arow-big.png" alt=""></div></div>
                                     <div class="accordion-body">
                                         <ul class="accordion accordion--semi" data-accordion="open">
                                             <li>
-                                                <div class="accordion-header accordion-header--semi">Приточной вентиляции</div>
+                                                <div class="accordion-header accordion-header--semi">Приточной вентиляции<div class="arrow-btn"><img src="images/icon/arow-big.png" alt="arrow"></div></div>
                                                 <div class="accordion-body">
-                                                    <ul class="accordion" data-accordion="open">
+                                                    <ul class="accordion accordion--mini" data-accordion="open">
                                                         <li>
-                                                          <div class="accordion-header accordion-header--min">Вентилятор</div>
+                                                          <div class="accordion-header accordion-header--min">Вентилятор<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
                                                           <div class="accordion-body">
                                                               <form>
                                                                 <input type="radio" id="one-phase" name="phase">
@@ -95,7 +96,7 @@
                                                           </div>
                                                         </li>
                                                         <li>
-                                                            <div class="accordion-header accordion-header--min">Тип пуска вентилятора</div>
+                                                            <div class="accordion-header accordion-header--min">Тип пуска вентилятора<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
                                                             <div class="accordion-body">
                                                                 <form>
                                                                   <input type="radio" id="converter" name="type">
@@ -108,7 +109,7 @@
                                                             </div>
                                                           </li>
                                                           <li>
-                                                            <div class="accordion-header accordion-header--min">Тип калорифера</div>
+                                                            <div class="accordion-header accordion-header--min">Тип калорифера<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
                                                             <div class="accordion-body">
                                                                 <form>
                                                                   <input type="radio" id="one-phase" name="phase">
@@ -121,7 +122,7 @@
                                                             </div>
                                                           </li>
                                                           <li>
-                                                            <div class="accordion-header accordion-header--min">Вентилятор</div>
+                                                            <div class="accordion-header accordion-header--min">Вентилятор<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
                                                             <div class="accordion-body">
                                                                 <form>
                                                                   <input type="radio" id="one-phase" name="phase">
@@ -136,29 +137,695 @@
                                                       </ul>
                                                 </div>
                                             </li>
-
+                                            <li>
+                                                <div class="accordion-header accordion-header--semi">Приточно-вытяжной вентиляции<div class="arrow-btn"><img src="images/icon/arow-big.png" alt="arrow"></div></div>
+                                                <div class="accordion-body">
+                                                    <ul class="accordion accordion--mini" data-accordion="open">
+                                                        <li>
+                                                          <div class="accordion-header accordion-header--min">Вентилятор<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                          <div class="accordion-body">
+                                                              <form>
+                                                                <input type="radio" id="one-phase" name="phase">
+                                                                <label for="one-phase">1-фазный (~220 В)</label>
+                                                                <input type="radio" id="three-phase" name="phase">
+                                                                <label for="three-phase">3-фазный (~380 В)</label>
+                                                              </form>
+                                                          </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="accordion-header accordion-header--min">Тип пуска вентилятора<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                            <div class="accordion-body">
+                                                                <form>
+                                                                  <input type="radio" id="converter" name="type">
+                                                                  <label for="converter">преобразователь частоты</label>
+                                                                  <input type="radio" id="straight" name="type">
+                                                                  <label for="straight">прямой пуск</label>
+                                                                  <input type="radio" id="regulator" name="type">
+                                                                  <label for="regulator">регулятор скорости</label>
+                                                                </form>
+                                                            </div>
+                                                          </li>
+                                                          <li>
+                                                            <div class="accordion-header accordion-header--min">Тип калорифера<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                            <div class="accordion-body">
+                                                                <form>
+                                                                  <input type="radio" id="one-phase" name="phase">
+                                                                  <label for="one-phase">преобразователь частоты</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">прямой пуск</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">регулятор скорости</label>
+                                                                </form>
+                                                            </div>
+                                                          </li>
+                                                          <li>
+                                                            <div class="accordion-header accordion-header--min">Вентилятор<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                            <div class="accordion-body">
+                                                                <form>
+                                                                  <input type="radio" id="one-phase" name="phase">
+                                                                  <label for="one-phase">преобразователь частоты</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">прямой пуск</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">регулятор скорости</label>
+                                                                </form>
+                                                            </div>
+                                                          </li>
+                                                      </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="accordion-header accordion-header--semi">Управление вентилятором<div class="arrow-btn"><img src="images/icon/arow-big.png" alt="arrow"></div></div>
+                                                <div class="accordion-body">
+                                                    <ul class="accordion accordion--mini" data-accordion="open">
+                                                        <li>
+                                                          <div class="accordion-header accordion-header--min">Вентилятор<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                          <div class="accordion-body">
+                                                              <form>
+                                                                <input type="radio" id="one-phase" name="phase">
+                                                                <label for="one-phase">1-фазный (~220 В)</label>
+                                                                <input type="radio" id="three-phase" name="phase">
+                                                                <label for="three-phase">3-фазный (~380 В)</label>
+                                                              </form>
+                                                          </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="accordion-header accordion-header--min">Тип пуска вентилятора<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                            <div class="accordion-body">
+                                                                <form>
+                                                                  <input type="radio" id="converter" name="type">
+                                                                  <label for="converter">преобразователь частоты</label>
+                                                                  <input type="radio" id="straight" name="type">
+                                                                  <label for="straight">прямой пуск</label>
+                                                                  <input type="radio" id="regulator" name="type">
+                                                                  <label for="regulator">регулятор скорости</label>
+                                                                </form>
+                                                            </div>
+                                                          </li>
+                                                          <li>
+                                                            <div class="accordion-header accordion-header--min">Тип калорифера<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                            <div class="accordion-body">
+                                                                <form>
+                                                                  <input type="radio" id="one-phase" name="phase">
+                                                                  <label for="one-phase">преобразователь частоты</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">прямой пуск</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">регулятор скорости</label>
+                                                                </form>
+                                                            </div>
+                                                          </li>
+                                                          <li>
+                                                            <div class="accordion-header accordion-header--min">Вентилятор<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                            <div class="accordion-body">
+                                                                <form>
+                                                                  <input type="radio" id="one-phase" name="phase">
+                                                                  <label for="one-phase">преобразователь частоты</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">прямой пуск</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">регулятор скорости</label>
+                                                                </form>
+                                                            </div>
+                                                          </li>
+                                                      </ul>
+                                                </div>
+                                            </li>
                                         </ul>
-
-
-
                                     </div>
-
-
-
-
                                 </li>
-
-
-
-
-
-
-
-
-
-
+                                <!-- Второй блок -->
+                                <li>
+                                    <div class="accordion-header">Панели управления <div class="arrow-btn"><img src="images/icon/arow-big.png" alt=""></div></div>
+                                    <div class="accordion-body">
+                                        <ul class="accordion accordion--semi" data-accordion="open">
+                                            <li>
+                                                <div class="accordion-header accordion-header--semi">Приточной вентиляции<div class="arrow-btn"><img src="images/icon/arow-big.png" alt="arrow"></div></div>
+                                                <div class="accordion-body">
+                                                    <ul class="accordion accordion--mini" data-accordion="open">
+                                                        <li>
+                                                          <div class="accordion-header accordion-header--min">Вентилятор<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                          <div class="accordion-body">
+                                                              <form>
+                                                                <input type="radio" id="one-phase" name="phase">
+                                                                <label for="one-phase">1-фазный (~220 В)</label>
+                                                                <input type="radio" id="three-phase" name="phase">
+                                                                <label for="three-phase">3-фазный (~380 В)</label>
+                                                              </form>
+                                                              <form class="form-second">
+                                                                <input type="radio" id="one-phase" name="phase">
+                                                                <label for="one-phase">преобразователь частоты</label>
+                                                                <input type="radio" id="three-phase" name="phase">
+                                                                <label for="three-phase">прямой пуск</label>
+                                                                <input type="radio" id="three-phase" name="phase">
+                                                                <label for="three-phase">регулятор скорости</label>
+                                                              </form>
+                                                          </div>
+                                                        </li>
+                                                       
+                                                      </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="accordion-header accordion-header--semi">Приточно-вытяжной вентиляции<div class="arrow-btn"><img src="images/icon/arow-big.png" alt="arrow"></div></div>
+                                                <div class="accordion-body">
+                                                    <ul class="accordion accordion--mini" data-accordion="open">
+                                                        <li>
+                                                          <div class="accordion-header accordion-header--min">Вентилятор<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                          <div class="accordion-body">
+                                                              <form>
+                                                                <input type="radio" id="one-phase" name="phase">
+                                                                <label for="one-phase">1-фазный (~220 В)</label>
+                                                                <input type="radio" id="three-phase" name="phase">
+                                                                <label for="three-phase">3-фазный (~380 В)</label>
+                                                              </form>
+                                                          </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="accordion-header accordion-header--min">Тип пуска вентилятора<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                            <div class="accordion-body">
+                                                                <form>
+                                                                  <input type="radio" id="converter" name="type">
+                                                                  <label for="converter">преобразователь частоты</label>
+                                                                  <input type="radio" id="straight" name="type">
+                                                                  <label for="straight">прямой пуск</label>
+                                                                  <input type="radio" id="regulator" name="type">
+                                                                  <label for="regulator">регулятор скорости</label>
+                                                                </form>
+                                                            </div>
+                                                          </li>
+                                                          <li>
+                                                            <div class="accordion-header accordion-header--min">Тип калорифера<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                            <div class="accordion-body">
+                                                                <form>
+                                                                  <input type="radio" id="one-phase" name="phase">
+                                                                  <label for="one-phase">преобразователь частоты</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">прямой пуск</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">регулятор скорости</label>
+                                                                </form>
+                                                            </div>
+                                                          </li>
+                                                          <li>
+                                                            <div class="accordion-header accordion-header--min">Вентилятор<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                            <div class="accordion-body">
+                                                                <form>
+                                                                  <input type="radio" id="one-phase" name="phase">
+                                                                  <label for="one-phase">преобразователь частоты</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">прямой пуск</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">регулятор скорости</label>
+                                                                </form>
+                                                            </div>
+                                                          </li>
+                                                      </ul>
+                                                </div>
+                                            </li>
+                                          
+                                        </ul>
+                                    </div>
+                                </li>
+                                <!-- Третий блок -->
+                                <li>
+                                    <div class="accordion-header">Датчики <div class="arrow-btn"><img src="images/icon/arow-big.png" alt=""></div></div>
+                                    <div class="accordion-body">
+                                        <ul class="accordion accordion--semi" data-accordion="open">
+                                            <li>
+                                                <div class="accordion-header accordion-header--semi">Приточной вентиляции<div class="arrow-btn"><img src="images/icon/arow-big.png" alt="arrow"></div></div>
+                                                <div class="accordion-body">
+                                                    <ul class="accordion accordion--mini" data-accordion="open">
+                                                        <li>
+                                                          <div class="accordion-header accordion-header--min">Вентилятор<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                          <div class="accordion-body">
+                                                              <form>
+                                                                <input type="radio" id="one-phase" name="phase">
+                                                                <label for="one-phase">1-фазный (~220 В)</label>
+                                                                <input type="radio" id="three-phase" name="phase">
+                                                                <label for="three-phase">3-фазный (~380 В)</label>
+                                                              </form>
+                                                              <form class="form-second">
+                                                                <input type="radio" id="one-phase" name="phase">
+                                                                <label for="one-phase">преобразователь частоты</label>
+                                                                <input type="radio" id="three-phase" name="phase">
+                                                                <label for="three-phase">прямой пуск</label>
+                                                                <input type="radio" id="three-phase" name="phase">
+                                                                <label for="three-phase">регулятор скорости</label>
+                                                              </form>
+                                                          </div>
+                                                        </li>
+                                                       
+                                                      </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="accordion-header accordion-header--semi">Приточно-вытяжной вентиляции<div class="arrow-btn"><img src="images/icon/arow-big.png" alt="arrow"></div></div>
+                                                <div class="accordion-body">
+                                                    <ul class="accordion accordion--mini" data-accordion="open">
+                                                        <li>
+                                                          <div class="accordion-header accordion-header--min">Вентилятор<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                          <div class="accordion-body">
+                                                              <form>
+                                                                <input type="radio" id="one-phase" name="phase">
+                                                                <label for="one-phase">1-фазный (~220 В)</label>
+                                                                <input type="radio" id="three-phase" name="phase">
+                                                                <label for="three-phase">3-фазный (~380 В)</label>
+                                                              </form>
+                                                          </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="accordion-header accordion-header--min">Тип пуска вентилятора<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                            <div class="accordion-body">
+                                                                <form>
+                                                                  <input type="radio" id="converter" name="type">
+                                                                  <label for="converter">преобразователь частоты</label>
+                                                                  <input type="radio" id="straight" name="type">
+                                                                  <label for="straight">прямой пуск</label>
+                                                                  <input type="radio" id="regulator" name="type">
+                                                                  <label for="regulator">регулятор скорости</label>
+                                                                </form>
+                                                            </div>
+                                                          </li>
+                                                          <li>
+                                                            <div class="accordion-header accordion-header--min">Тип калорифера<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                            <div class="accordion-body">
+                                                                <form>
+                                                                  <input type="radio" id="one-phase" name="phase">
+                                                                  <label for="one-phase">преобразователь частоты</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">прямой пуск</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">регулятор скорости</label>
+                                                                </form>
+                                                            </div>
+                                                          </li>
+                                                          <li>
+                                                            <div class="accordion-header accordion-header--min">Вентилятор<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                            <div class="accordion-body">
+                                                                <form>
+                                                                  <input type="radio" id="one-phase" name="phase">
+                                                                  <label for="one-phase">преобразователь частоты</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">прямой пуск</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">регулятор скорости</label>
+                                                                </form>
+                                                            </div>
+                                                          </li>
+                                                      </ul>
+                                                </div>
+                                            </li>
+                                          
+                                        </ul>
+                                    </div>
+                                </li>
+                                <!-- Четвертый блок -->
+                                <li>
+                                    <div class="accordion-header">Преобразователи частоты<div class="arrow-btn"><img src="images/icon/arow-big.png" alt=""></div></div>
+                                    <div class="accordion-body">
+                                        <ul class="accordion accordion--semi" data-accordion="open">
+                                            <li>
+                                                <div class="accordion-header accordion-header--semi">Приточной вентиляции<div class="arrow-btn"><img src="images/icon/arow-big.png" alt="arrow"></div></div>
+                                                <div class="accordion-body">
+                                                    <ul class="accordion accordion--mini" data-accordion="open">
+                                                        <li>
+                                                          <div class="accordion-header accordion-header--min">Вентилятор<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                          <div class="accordion-body">
+                                                              <form>
+                                                                <input type="radio" id="one-phase" name="phase">
+                                                                <label for="one-phase">1-фазный (~220 В)</label>
+                                                                <input type="radio" id="three-phase" name="phase">
+                                                                <label for="three-phase">3-фазный (~380 В)</label>
+                                                              </form>
+                                                              <form class="form-second">
+                                                                <input type="radio" id="one-phase" name="phase">
+                                                                <label for="one-phase">преобразователь частоты</label>
+                                                                <input type="radio" id="three-phase" name="phase">
+                                                                <label for="three-phase">прямой пуск</label>
+                                                                <input type="radio" id="three-phase" name="phase">
+                                                                <label for="three-phase">регулятор скорости</label>
+                                                              </form>
+                                                          </div>
+                                                        </li>
+                                                       
+                                                      </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="accordion-header accordion-header--semi">Приточно-вытяжной вентиляции<div class="arrow-btn"><img src="images/icon/arow-big.png" alt="arrow"></div></div>
+                                                <div class="accordion-body">
+                                                    <ul class="accordion accordion--mini" data-accordion="open">
+                                                        <li>
+                                                          <div class="accordion-header accordion-header--min">Вентилятор<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                          <div class="accordion-body">
+                                                              <form>
+                                                                <input type="radio" id="one-phase" name="phase">
+                                                                <label for="one-phase">1-фазный (~220 В)</label>
+                                                                <input type="radio" id="three-phase" name="phase">
+                                                                <label for="three-phase">3-фазный (~380 В)</label>
+                                                              </form>
+                                                          </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="accordion-header accordion-header--min">Тип пуска вентилятора<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                            <div class="accordion-body">
+                                                                <form>
+                                                                  <input type="radio" id="converter" name="type">
+                                                                  <label for="converter">преобразователь частоты</label>
+                                                                  <input type="radio" id="straight" name="type">
+                                                                  <label for="straight">прямой пуск</label>
+                                                                  <input type="radio" id="regulator" name="type">
+                                                                  <label for="regulator">регулятор скорости</label>
+                                                                </form>
+                                                            </div>
+                                                          </li>
+                                                          <li>
+                                                            <div class="accordion-header accordion-header--min">Тип калорифера<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                            <div class="accordion-body">
+                                                                <form>
+                                                                  <input type="radio" id="one-phase" name="phase">
+                                                                  <label for="one-phase">преобразователь частоты</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">прямой пуск</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">регулятор скорости</label>
+                                                                </form>
+                                                            </div>
+                                                          </li>
+                                                          <li>
+                                                            <div class="accordion-header accordion-header--min">Вентилятор<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                            <div class="accordion-body">
+                                                                <form>
+                                                                  <input type="radio" id="one-phase" name="phase">
+                                                                  <label for="one-phase">преобразователь частоты</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">прямой пуск</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">регулятор скорости</label>
+                                                                </form>
+                                                            </div>
+                                                          </li>
+                                                      </ul>
+                                                </div>
+                                            </li>
+                                          
+                                        </ul>
+                                    </div>
+                                </li>
+                                <!-- Пятый блок -->
+                                <li>
+                                    <div class="accordion-header">Приводы воздушных заслонок<div class="arrow-btn"><img src="images/icon/arow-big.png" alt=""></div></div>
+                                    <div class="accordion-body">
+                                        <ul class="accordion accordion--semi" data-accordion="open">
+                                            <li>
+                                                <div class="accordion-header accordion-header--semi">Приточной вентиляции<div class="arrow-btn"><img src="images/icon/arow-big.png" alt="arrow"></div></div>
+                                                <div class="accordion-body">
+                                                    <ul class="accordion accordion--mini" data-accordion="open">
+                                                        <li>
+                                                          <div class="accordion-header accordion-header--min">Вентилятор<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                          <div class="accordion-body">
+                                                              <form>
+                                                                <input type="radio" id="one-phase" name="phase">
+                                                                <label for="one-phase">1-фазный (~220 В)</label>
+                                                                <input type="radio" id="three-phase" name="phase">
+                                                                <label for="three-phase">3-фазный (~380 В)</label>
+                                                              </form>
+                                                              <form class="form-second">
+                                                                <input type="radio" id="one-phase" name="phase">
+                                                                <label for="one-phase">преобразователь частоты</label>
+                                                                <input type="radio" id="three-phase" name="phase">
+                                                                <label for="three-phase">прямой пуск</label>
+                                                                <input type="radio" id="three-phase" name="phase">
+                                                                <label for="three-phase">регулятор скорости</label>
+                                                              </form>
+                                                          </div>
+                                                        </li>
+                                                       
+                                                      </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="accordion-header accordion-header--semi">Приточно-вытяжной вентиляции<div class="arrow-btn"><img src="images/icon/arow-big.png" alt="arrow"></div></div>
+                                                <div class="accordion-body">
+                                                    <ul class="accordion accordion--mini" data-accordion="open">
+                                                        <li>
+                                                          <div class="accordion-header accordion-header--min">Вентилятор<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                          <div class="accordion-body">
+                                                              <form>
+                                                                <input type="radio" id="one-phase" name="phase">
+                                                                <label for="one-phase">1-фазный (~220 В)</label>
+                                                                <input type="radio" id="three-phase" name="phase">
+                                                                <label for="three-phase">3-фазный (~380 В)</label>
+                                                              </form>
+                                                          </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="accordion-header accordion-header--min">Тип пуска вентилятора<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                            <div class="accordion-body">
+                                                                <form>
+                                                                  <input type="radio" id="converter" name="type">
+                                                                  <label for="converter">преобразователь частоты</label>
+                                                                  <input type="radio" id="straight" name="type">
+                                                                  <label for="straight">прямой пуск</label>
+                                                                  <input type="radio" id="regulator" name="type">
+                                                                  <label for="regulator">регулятор скорости</label>
+                                                                </form>
+                                                            </div>
+                                                          </li>
+                                                          <li>
+                                                            <div class="accordion-header accordion-header--min">Тип калорифера<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                            <div class="accordion-body">
+                                                                <form>
+                                                                  <input type="radio" id="one-phase" name="phase">
+                                                                  <label for="one-phase">преобразователь частоты</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">прямой пуск</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">регулятор скорости</label>
+                                                                </form>
+                                                            </div>
+                                                          </li>
+                                                          <li>
+                                                            <div class="accordion-header accordion-header--min">Вентилятор<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                            <div class="accordion-body">
+                                                                <form>
+                                                                  <input type="radio" id="one-phase" name="phase">
+                                                                  <label for="one-phase">преобразователь частоты</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">прямой пуск</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">регулятор скорости</label>
+                                                                </form>
+                                                            </div>
+                                                          </li>
+                                                      </ul>
+                                                </div>
+                                            </li>
+                                          
+                                        </ul>
+                                    </div>
+                                </li>
+                                <!-- Шестой блок -->
+                                <li>
+                                    <div class="accordion-header">Смесительные узлы<div class="arrow-btn"><img src="images/icon/arow-big.png" alt=""></div></div>
+                                    <div class="accordion-body">
+                                        <ul class="accordion accordion--semi" data-accordion="open">
+                                            <li>
+                                                <div class="accordion-header accordion-header--semi">Приточной вентиляции<div class="arrow-btn"><img src="images/icon/arow-big.png" alt="arrow"></div></div>
+                                                <div class="accordion-body">
+                                                    <ul class="accordion accordion--mini" data-accordion="open">
+                                                        <li>
+                                                          <div class="accordion-header accordion-header--min">Вентилятор<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                          <div class="accordion-body">
+                                                              <form>
+                                                                <input type="radio" id="one-phase" name="phase">
+                                                                <label for="one-phase">1-фазный (~220 В)</label>
+                                                                <input type="radio" id="three-phase" name="phase">
+                                                                <label for="three-phase">3-фазный (~380 В)</label>
+                                                              </form>
+                                                          </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="accordion-header accordion-header--min">Тип пуска вентилятора<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                            <div class="accordion-body">
+                                                                <form>
+                                                                  <input type="radio" id="converter" name="type">
+                                                                  <label for="converter">преобразователь частоты</label>
+                                                                  <input type="radio" id="straight" name="type">
+                                                                  <label for="straight">прямой пуск</label>
+                                                                  <input type="radio" id="regulator" name="type">
+                                                                  <label for="regulator">регулятор скорости</label>
+                                                                </form>
+                                                            </div>
+                                                          </li>
+                                                          <li>
+                                                            <div class="accordion-header accordion-header--min">Тип калорифера<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                            <div class="accordion-body">
+                                                                <form>
+                                                                  <input type="radio" id="one-phase" name="phase">
+                                                                  <label for="one-phase">преобразователь частоты</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">прямой пуск</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">регулятор скорости</label>
+                                                                </form>
+                                                            </div>
+                                                          </li>
+                                                          <li>
+                                                            <div class="accordion-header accordion-header--min">Вентилятор<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                            <div class="accordion-body">
+                                                                <form>
+                                                                  <input type="radio" id="one-phase" name="phase">
+                                                                  <label for="one-phase">преобразователь частоты</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">прямой пуск</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">регулятор скорости</label>
+                                                                </form>
+                                                            </div>
+                                                          </li>
+                                                      </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="accordion-header accordion-header--semi">Приточно-вытяжной вентиляции<div class="arrow-btn"><img src="images/icon/arow-big.png" alt="arrow"></div></div>
+                                                <div class="accordion-body">
+                                                    <ul class="accordion accordion--mini" data-accordion="open">
+                                                        <li>
+                                                          <div class="accordion-header accordion-header--min">Вентилятор<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                          <div class="accordion-body">
+                                                              <form>
+                                                                <input type="radio" id="one-phase" name="phase">
+                                                                <label for="one-phase">1-фазный (~220 В)</label>
+                                                                <input type="radio" id="three-phase" name="phase">
+                                                                <label for="three-phase">3-фазный (~380 В)</label>
+                                                              </form>
+                                                          </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="accordion-header accordion-header--min">Тип пуска вентилятора<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                            <div class="accordion-body">
+                                                                <form>
+                                                                  <input type="radio" id="converter" name="type">
+                                                                  <label for="converter">преобразователь частоты</label>
+                                                                  <input type="radio" id="straight" name="type">
+                                                                  <label for="straight">прямой пуск</label>
+                                                                  <input type="radio" id="regulator" name="type">
+                                                                  <label for="regulator">регулятор скорости</label>
+                                                                </form>
+                                                            </div>
+                                                          </li>
+                                                          <li>
+                                                            <div class="accordion-header accordion-header--min">Тип калорифера<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                            <div class="accordion-body">
+                                                                <form>
+                                                                  <input type="radio" id="one-phase" name="phase">
+                                                                  <label for="one-phase">преобразователь частоты</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">прямой пуск</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">регулятор скорости</label>
+                                                                </form>
+                                                            </div>
+                                                          </li>
+                                                          <li>
+                                                            <div class="accordion-header accordion-header--min">Вентилятор<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                            <div class="accordion-body">
+                                                                <form>
+                                                                  <input type="radio" id="one-phase" name="phase">
+                                                                  <label for="one-phase">преобразователь частоты</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">прямой пуск</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">регулятор скорости</label>
+                                                                </form>
+                                                            </div>
+                                                          </li>
+                                                      </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="accordion-header accordion-header--semi">Управление вентилятором<div class="arrow-btn"><img src="images/icon/arow-big.png" alt="arrow"></div></div>
+                                                <div class="accordion-body">
+                                                    <ul class="accordion accordion--mini" data-accordion="open">
+                                                        <li>
+                                                          <div class="accordion-header accordion-header--min">Вентилятор<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                          <div class="accordion-body">
+                                                              <form>
+                                                                <input type="radio" id="one-phase" name="phase">
+                                                                <label for="one-phase">1-фазный (~220 В)</label>
+                                                                <input type="radio" id="three-phase" name="phase">
+                                                                <label for="three-phase">3-фазный (~380 В)</label>
+                                                              </form>
+                                                          </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="accordion-header accordion-header--min">Тип пуска вентилятора<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                            <div class="accordion-body">
+                                                                <form>
+                                                                  <input type="radio" id="converter" name="type">
+                                                                  <label for="converter">преобразователь частоты</label>
+                                                                  <input type="radio" id="straight" name="type">
+                                                                  <label for="straight">прямой пуск</label>
+                                                                  <input type="radio" id="regulator" name="type">
+                                                                  <label for="regulator">регулятор скорости</label>
+                                                                </form>
+                                                            </div>
+                                                          </li>
+                                                          <li>
+                                                            <div class="accordion-header accordion-header--min">Тип калорифера<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                            <div class="accordion-body">
+                                                                <form>
+                                                                  <input type="radio" id="one-phase" name="phase">
+                                                                  <label for="one-phase">преобразователь частоты</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">прямой пуск</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">регулятор скорости</label>
+                                                                </form>
+                                                            </div>
+                                                          </li>
+                                                          <li>
+                                                            <div class="accordion-header accordion-header--min">Вентилятор<div class="arrow-btn"><img src="images/icon/arrow-mini.png" alt="arrow"></div></div>
+                                                            <div class="accordion-body">
+                                                                <form>
+                                                                  <input type="radio" id="one-phase" name="phase">
+                                                                  <label for="one-phase">преобразователь частоты</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">прямой пуск</label>
+                                                                  <input type="radio" id="three-phase" name="phase">
+                                                                  <label for="three-phase">регулятор скорости</label>
+                                                                </form>
+                                                            </div>
+                                                          </li>
+                                                      </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
                             </ul>
                         </aside>
+                        <div class="product__page-right">
+                            <div class="product__page-center">
+                                <div class="product__page-tags">
+                                    <div class="product__page-tag">
+                                        <a class="close" href="#">x</a>
+                                        <span>1-фазный (~220 В)</span>
+                                    </div>
+                                    <div class="product__page-tag">
+                                        <a class="close" href="#">x</a>
+                                        <span>прямой пуск</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        
+
+
                     </div>
                 </div>
             </section>
