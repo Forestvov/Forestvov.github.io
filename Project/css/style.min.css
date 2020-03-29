@@ -663,10 +663,6 @@ body {
   right: 0;
 }
 
-.product__select-list li {
-  display: block;
-}
-
 .product__select-row {
   display: -webkit-box;
   display: -ms-flexbox;

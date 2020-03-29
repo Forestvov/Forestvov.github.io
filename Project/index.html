@@ -53,18 +53,16 @@
                 <div class="header__bottom">
                     <div class="container">
                         <nav class="header__menu">
-                            <li><a class="active" href="#">Вентиляция</a></li>
-                            <li><a href="#">Индивидуальные тепловые пункты</a></li>
-                            <li><a href="#">Противопожарная вентиляция</a></li>
-                            <li>
-                                <form class="header-form">
-                                    <input type="text" placeholder="Поиск" required>
-                                    <button class="btn-search" type="submit"></button>
-                                </form>
-                            </li>
-                            <li><a href="#">Доставка и оплата</a></li>
-                            <li><a href="#">О компании</a></li>
-                            <li><a href="#">Контакты</a></li>
+                            <a class="active" href="#">Вентиляция</a>
+                            <a href="#">Индивидуальные тепловые пункты</a>
+                            <a href="#">Противопожарная вентиляция</a>
+                            <form class="header-form">
+                                <input type="text" placeholder="Поиск" required>
+                                <button class="btn-search" type="submit"></button>
+                            </form>
+                            <a href="#">Доставка и оплата</a>
+                            <a href="#">О компании</a>
+                            <a href="#">Контакты</a>
                         </nav>
                     </div>
                 </div>
@@ -949,8 +947,8 @@
                                 <div class="product__select-name">
                                   Система 1
                                 </div>
-                                <ul class="product__select-list">
-                                  <li>
+                                <div class="product__select-list">
+                                  <div class="product__select-picked">
                                     <div class="product__select-row">
                                          <span>
                                           Щит управления вентиляцией с электрокалорифером ЩУВ 
@@ -964,8 +962,8 @@
                                       </div>
                                     </div>
                                     <div class="price">16 980 р.</div>
-                                  </li>
-                                  <li>
+                                  </div>
+                                  <div class="product__select-picked">
                                     <div class="product__select-warring">
                                       Преобразователь частоты
                                       <div class="product__select-box">
@@ -976,8 +974,8 @@
                                       </div>
                                     </div>
                                     <div class="warring-select">Необходимо выбрать</div>
-                                  </li>
-                                  <li>
+                                  </div>
+                                  <div class="product__select-picked">
                                     <div class="product__select-row">
                                       Датчик температуры HS1-01
                                       <div class="product__select-box">
@@ -988,27 +986,28 @@
                                       </div>
                                     </div>
                                     <div class="price">780 р.</div>
-                                  </li>
+                                  </div>
 
-                                  <li>
+                                  <div class="product__select-picked">
                                     <div class="product__select-row">
                                       <div class="result__price">Итого по системе:</div>
                                       <div class="global__price">780 р.</div>
                                     </div>
-                                  </li>
-                                  <li>
+                                  </div>
+                                  <div class="product__select-picked">
                                     <div class="delete">
                                       <a  href="#">Удалить систему </a>
                                     </div>
-                                  </li>
-                                </ul>
+                                  </div>
+                                </div>
                               </div>
+
                               <div class="product__select-item">
                                 <div class="product__select-name">
-                                  Система 2. Очень длинное название второй системы
+                                  Система 1
                                 </div>
-                                <ul class="product__select-list">
-                                  <li>
+                                <div class="product__select-list">
+                                  <div class="product__select-picked">
                                     <div class="product__select-row">
                                          <span>
                                           Щит управления вентиляцией с электрокалорифером ЩУВ 
@@ -1022,8 +1021,20 @@
                                       </div>
                                     </div>
                                     <div class="price">16 980 р.</div>
-                                  </li>
-                                  <li>
+                                  </div>
+                                  <div class="product__select-picked">
+                                    <div class="product__select-warring">
+                                      Преобразователь частоты
+                                      <div class="product__select-box">
+                                        <div class="quantity">
+                                          <input type="number" min="1" max="9" step="1" value="1">
+                                        </div>
+                                        <a class="close" href="#"><img src="images/icon/close.png" alt="close"></a>  
+                                      </div>
+                                    </div>
+                                    <div class="warring-select">Необходимо выбрать</div>
+                                  </div>
+                                  <div class="product__select-picked">
                                     <div class="product__select-row">
                                       Датчик температуры HS1-01
                                       <div class="product__select-box">
@@ -1034,32 +1045,22 @@
                                       </div>
                                     </div>
                                     <div class="price">780 р.</div>
-                                  </li>
-                                    <div class="product__select-row">
-                                      Датчик температуры HS1-01
-                                      <div class="product__select-box">
-                                        <div class="quantity">
-                                          <input type="number" min="1" max="9" step="1" value="1">
-                                        </div>
-                                        <a class="close" href="#"><img src="images/icon/close.png" alt="close"></a>  
-                                      </div>
-                                    </div>
-                                    <div class="price">780 р.</div>
-                                  </li>
+                                  </div>
 
-                                  <li>
+                                  <div class="product__select-picked">
                                     <div class="product__select-row">
                                       <div class="result__price">Итого по системе:</div>
-                                      <div class="global__price">325 888 р.</div>
+                                      <div class="global__price">780 р.</div>
                                     </div>
-                                  </li>
-                                  <li>
+                                  </div>
+                                  <div class="product__select-picked">
                                     <div class="delete">
                                       <a  href="#">Удалить систему </a>
                                     </div>
-                                  </li>
-                                </ul>
+                                  </div>
+                                </div>
                               </div>
+
                               <div class="total__price">
                                 <span>
                                   Итого КП:
