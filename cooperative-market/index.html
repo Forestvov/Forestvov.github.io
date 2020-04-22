@@ -14,10 +14,20 @@
 <body>
     <div class="wrapper">
         <div class="content">
-            <header class="header" style="background-image: url(images/header/header-line.png);">
-                <div class="container">
+            <header class="header" style="background-image: url(images/footer/footer-bg.png);">
+                <div class="container-fluid">
                     <div class="header__inner">
                         <div class="header__logo"><a href="#"><img src="images/logo.png" alt="logo"></a></div>
+                        <div class="header__burger">
+                            <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80"
+                                onclick="this.classList.toggle('active')">
+                                <path class="line top"
+                                    d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                                <path class="line middle" d="m 30,50 h 40" />
+                                <path class="line bottom"
+                                    d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                            </svg>
+                        </div>
                         <nav class="header__menu">
                             <a href="#">О КЛУБЕ</a>
                             <a href="#">НОВОСТИ</a>
@@ -162,38 +172,155 @@
                     <div class="reviews__title ">
                         <h3 class="title">ОТЗЫВЫ ПАРТНЁРОВ</h3>
                     </div>
-                    <div class="container">
-                        <div class="reviews__inner">
-                            <div class="reviews__inner-item">
-                                <div class="reviews__inner-avater">
-                                    <img src="images/reviews/avater-1.jpg" alt="avater">
-                                </div>
-                                <div class="reviews__inner-name">
-                                    Даниил Кулаков
-                                </div>
-                                <div class="reviews__inner-position">
-                                    Начальник склада ООО “Городок”
-                                </div>
-                                <div class="reviews__inner-comment">
-                                    Хороший рынок, мне очень понравилось
-                                </div>
+                    <div class="reviews__inner">
+                        <div class="reviews__inner-item">
+                            <div class="reviews__inner-avater">
+                                <img src="images/reviews/avater-1.jpg" alt="avater">
                             </div>
+                            <div class="reviews__inner-name">
+                                Даниил Кулаков
+                            </div>
+                            <div class="reviews__inner-position">
+                                Начальник склада ООО “Городок”
+                            </div>
+                            <div class="reviews__inner-comment">
+                                Хороший рынок, мне очень понравилось
+                            </div>
+                            <div class="reviews__inner-rate" id="rateYo"></div>
+                        </div>
+                        <div class="reviews__inner-item">
+                            <div class="reviews__inner-avater">
+                                <img src="images/reviews/avater-1.jpg" alt="avater">
+                            </div>
+                            <div class="reviews__inner-name">
+                                Даниил Кулаков
+                            </div>
+                            <div class="reviews__inner-position">
+                                Начальник склада ООО “Городок”
+                            </div>
+                            <div class="reviews__inner-comment">
+                                Хороший рынок, мне очень понравилось
+                            </div>
+                            <div class="reviews__inner-rate" id="rateYo"></div>
+                        </div>
+                        <div class="reviews__inner-item">
+                            <div class="reviews__inner-avater">
+                                <img src="images/reviews/avater-1.jpg" alt="avater">
+                            </div>
+                            <div class="reviews__inner-name">
+                                Даниил Кулаков
+                            </div>
+                            <div class="reviews__inner-position">
+                                Начальник склада ООО “Городок”
+                            </div>
+                            <div class="reviews__inner-comment">
+                                Хороший рынок, мне очень понравилось
+                            </div>
+                            <div class="reviews__inner-rate" id="rateYo"></div>
+                        </div>
+                        <div class="reviews__inner-item">
+                            <div class="reviews__inner-avater">
+                                <img src="images/reviews/avater-1.jpg" alt="avater">
+                            </div>
+                            <div class="reviews__inner-name">
+                                Даниил Кулаков
+                            </div>
+                            <div class="reviews__inner-position">
+                                Начальник склада ООО “Городок”
+                            </div>
+                            <div class="reviews__inner-comment">
+                                Хороший рынок, мне очень понравилось
+                            </div>
+                            <div class="reviews__inner-rate" id="rateYo"></div>
+                        </div>
+                        <div class="reviews__inner-item">
+                            <div class="reviews__inner-avater">
+                                <img src="images/reviews/avater-1.jpg" alt="avater">
+                            </div>
+                            <div class="reviews__inner-name">
+                                Даниил Кулаков
+                            </div>
+                            <div class="reviews__inner-position">
+                                Начальник склада ООО “Городок”
+                            </div>
+                            <div class="reviews__inner-comment">
+                                Хороший рынок, мне очень понравилось
+                            </div>
+                            <div class="reviews__inner-rate" id="rateYo"></div>
+                        </div>
+                        <div class="reviews__inner-item">
+                            <div class="reviews__inner-avater">
+                                <img src="images/reviews/avater-1.jpg" alt="avater">
+                            </div>
+                            <div class="reviews__inner-name">
+                                Даниил Кулаков
+                            </div>
+                            <div class="reviews__inner-position">
+                                Начальник склада ООО “Городок”
+                            </div>
+                            <div class="reviews__inner-comment">
+                                Хороший рынок, мне очень понравилось
+                            </div>
+                            <div class="reviews__inner-rate" id="rateYo"></div>
+                        </div>
+                        <div class="reviews__inner-item">
+                            <div class="reviews__inner-avater">
+                                <img src="images/reviews/avater-1.jpg" alt="avater">
+                            </div>
+                            <div class="reviews__inner-name">
+                                Даниил Кулаков
+                            </div>
+                            <div class="reviews__inner-position">
+                                Начальник склада ООО “Городок”
+                            </div>
+                            <div class="reviews__inner-comment">
+                                Хороший рынок, мне очень понравилось
+                            </div>
+                            <div class="reviews__inner-rate" id="rateYo"></div>
+                        </div>
+                        <div class="reviews__inner-item">
+                            <div class="reviews__inner-avater">
+                                <img src="images/reviews/avater-1.jpg" alt="avater">
+                            </div>
+                            <div class="reviews__inner-name">
+                                Даниил Кулаков
+                            </div>
+                            <div class="reviews__inner-position">
+                                Начальник склада ООО “Городок”
+                            </div>
+                            <div class="reviews__inner-comment">
+                                Хороший рынок, мне очень понравилось
+                            </div>
+                            <div class="reviews__inner-rate" id="rateYo"></div>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
-
-
-
-        <footer class="footer">
-            <div class="container">
-
-
-
-
+        <!-- style="background-image: url(images/line.png);" -->
+         <footer class="footer" >
+            <div class="container-fluid">
+                <div class="footer__inner">
+                    <a class="footer__inner-logo" href="#"><img src="images/logo.png" alt="logo"></a>
+                    <div class="footer__inner-copyright">
+                        <p class="footer__inner-text">
+                            ПО ”НПО” ©2020, Все права защищены, 125009, г. Москва,
+                            Воздвиженка, д. 10, 3 этаж ОГРН 11344001005551 ИНН 4401142553 Использование материалов сайта
+                            без согласования запрещено.
+                        </p>
+                        <div class="footer__inner-btns">
+                            <a class="footer__inner-btn" href="#">Политика обработки персональных данных</a>
+                            <a class="footer__inner-btn" href="#">Политика конфиденциальности</a>
+                        </div>
+                    </div>
+                    <ul class="footer__inner-social">
+                        <li><a href="#"><img src="images/footer/facebook.png" alt="facebook"></a></li>
+                        <li><a href="#"><img src="images/footer/vk.png" alt="vk"></a></li>
+                        <li><a href="#"><img src="images/footer/insta.png" alt="insta"></a></li>
+                    </ul>
+                </div>
             </div>
-        </footer>
+        </footer> 
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
