@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header class="header" style="background-image: url(images/footer/footer-bg.png);">
+                <div class="container-fluid">
+                    <div class="header__inner">
+                        <div class="header__logo"><a href="#"><img src="images/logo.png" alt="logo"></a></div>
+                        <div class="header__burger">
+                            <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80"
+                                onclick="this.classList.toggle('active')">
+                                <path class="line top"
+                                    d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                                <path class="line middle" d="m 30,50 h 40" />
+                                <path class="line bottom"
+                                    d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                            </svg>
+                        </div>
+                        <nav class="header__menu">
+                            <a href="#">О КЛУБЕ</a>
+                            <a href="#">НОВОСТИ</a>
+                            <a href="#">ВЫГОДЫ И ПРЕИМУЩЕСТВА</a>
+                            <a href="#">ВОПРОСЫ И ОТВЕТЫ</a>
+                            <a href="#">КОНТАКТЫ </a>
+                            <button>ВОЙТИ В КЛУБ</button>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+
+            <section class="faq">
+                <div class="container">
+                    <h3 class="faq__title main-title">
+                        Вопросы и ответы
+                    </h3>
+                    <div class="faq__inner">
+                        <div class="faq__inner-contact">
+                            <p class="faq__inner-text text">
+                                Проверьте наши часто задаваемые вопросы ниже. Если вы все еще не можете найти ответ,
+                                пожалуйста, свяжитесь с нами.
+                                Наша команда работает с понедельника по четверг с 10:00 до 18:00 по восточному времени и
+                                в пятницу с 9:00 до 15:00 по восточному поясному времени.
+                            </p>
+                            <div class="faq__inner-mail">
+                                <span>Обслуживание клиентов :</span>
+                                <a href="#">customercare@rebeccaminkoff.com</a>
+                            </div>
+                            <div class="faq__inner-phone">
+                                <span>Телефон:</span>
+                                <a href="tel:18668386991">1 (866) 838 - 6991</a>
+                            </div>
+                        </div>
+
+                        <div class="faq__inner-content">
+                            <h4 class="faq__inner-title">
+                                Популярные вопросы
+                            </h4>
+                            <ul class="accordion" data-accordion="open">
+                                <li>
+                                    <div class="accordion-header">
+                                        Какие у меня варианты доставки?
+                                        <div class="accordion-header__btn"></div>
+                                    </div>
+                                    <div class="accordion-body">
+                                        <p class="faq__inner-text text">
+                                            Бесплатная наземная доставка доступна для всех внутренних заказов. Если вы
+                                            хотите ускорить свой заказ, выберите при оформлении заказа FedEx Standard
+                                            Overnight, FedEx 2 Day или FedEx Express Saver. Цена будет рассчитываться
+                                            при оформлении заказа в зависимости от размера и веса вашего заказа. В
+                                            настоящее время мы не можем осуществлять доставку на территории США и
+                                            почтовые ящики.
+                                        </p>
+                                        <p class="faq__inner-text text">
+                                            Бесплатная доставка доступна для международных заказов на сумму от 300
+                                            долларов США и более. Пошлины и налоги не распространяются на бесплатную
+                                            доставку. Пожалуйста, подождите дополнительно пять-одиннадцать рабочих дней
+                                            для обработки международных заказов.
+                                        </p>
+                                        <p class="faq__inner-text text">
+                                            Для получения дополнительной информации о нашей
+                                            международной доставке, пожалуйста, посетите нашу страницу доставки.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="accordion-header">
+                                        Когда мой заказ будет отправлен?
+                                        <div class="accordion-header__btn"></div>
+                                    </div>
+                                    <div class="accordion-body">
+                                        <p class="faq__inner-text text">
+                                            Все заказы доставляются в течение 1-2 рабочих дней с момента подтверждения
+                                            вашего заказа. Все заказы, полученные до 12:00 EST, будут обработаны в тот
+                                            же день; любые заказы, сделанные после 12:00 EST, будут обработаны на
+                                            следующий рабочий день. Заказы, размещенные в пятницу после 12:00 EST, будут
+                                            отправлены в следующий понедельник. Однако в рекламные периоды, а также в
+                                            федеральные и американские праздники или около них обработка может занять
+                                            5-7 рабочих дней с даты подтверждения вашего заказа. Пожалуйста, подождите
+                                            дополнительно пять-одиннадцать рабочих дней для обработки международных
+                                            заказов.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        <footer class="footer" style="background-image: url(images/footer/footer-bg.png);">
+            <div class="container-fluid">
+                <div class="footer__inner">
+                    <a class="footer__inner-logo" href="#"><img src="images/logo.png" alt="logo"></a>
+                    <div class="footer__inner-copyright">
+                        <p class="footer__inner-text">
+                            ПО ”НПО” ©2020, Все права защищены, 125009, г. Москва,
+                            Воздвиженка, д. 10, 3 этаж ОГРН 11344001005551 ИНН 4401142553 Использование материалов сайта
+                            без согласования запрещено.
+                        </p>
+                        <div class="footer__inner-btns">
+                            <a class="footer__inner-btn" href="#">Политика обработки персональных данных</a>
+                            <a class="footer__inner-btn" href="#">Политика конфиденциальности</a>
+                        </div>
+                    </div>
+                    <ul class="footer__inner-social">
+                        <li><a href="#"><img src="images/footer/facebook.png" alt="facebook"></a></li>
+                        <li><a href="#"><img src="images/footer/vk.png" alt="vk"></a></li>
+                        <li><a href="#"><img src="images/footer/insta.png" alt="insta"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
