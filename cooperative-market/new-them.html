@@ -39,64 +39,32 @@
                     </div>
                 </div>
             </header>
-   
-            <section class="firstStep">
-                <div class="container">
-                    <div class="firstStep__title main-title">
-                        Регистрация
-                    </div>
-                    <div class="firstStep__inner">
-                        <div class="firstStep__inner-title register-title">
-                            Заполните данные для формирования вашего личного ID
-                        </div>
-                        <div class="firstStep__inner-form">
-                            <form>
-                                <label>
-                                    <span>РЕГИОН</span>
-                                    <select name="region"> 
-                                        <option value="value1">Московская область 1</option> 
-                                        <option value="value2" selected>Московская область</option>
-                                        <option value="value3">Московская область</option>
-                                      </select>
-                                </label>
-                                <label>
-                                    <span>ГОРОД</span>
-                                    <select name="city"> 
-                                        <option value="value1">Москва 1</option> 
-                                        <option value="value2" selected>Москва 2</option>
-                                        <option value="value3">Москва 3</option>
-                                      </select>
-                                </label>
-                                <label>
-                                    <span>E-MAIL</span>
-                                    <input type="email" placeholder="Enter your email" required>
-                                </label>
-                                <div class="firstStep__inner-bottom">
-                                    <span>На этот E-mail отправлено СМС с логином и временным паролем для входа</span>
-                                    <button class="button-default" type="submit">
-                                        Далее 
-                                    </button>
+
+            <section class="newthem">
+                <div class="container-forum">
+                    <h3 class="newthem__title main-title">
+                        Новая тема
+                    </h3>
+                    <div class="newthem__inner">
+                        <form>
+                            <label><span>Заголовок</span><input type="text" required></label>
+                            <label>
+                                <span>Описание темы</span>
+                                <div class="singleforum__form-box">
+                                    <textarea required></textarea>
+                                    <button class="new__post-btn" type="submit">Создать тему</button>
                                 </div>
-                            </form>
-                        </div>
+                            </label>
+                        </form>
                     </div>
                 </div>
             </section>
 
 
 
-
-
-
-
-
-
-
-
-
         </div>
 
-         <footer class="footer" style="background-image: url(images/footer/footer-bg.png);">
+        <footer class="footer" style="background-image: url(images/footer/footer-bg.png);">
             <div class="container-fluid">
                 <div class="footer__inner">
                     <a class="footer__inner-logo" href="#"><img src="images/logo.png" alt="logo"></a>
@@ -118,11 +86,12 @@
                     </ul>
                 </div>
             </div>
-        </footer> 
+        </footer>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
+
 </html>

@@ -53,58 +53,58 @@
                             <form>
                                 <div class="regContact__inner-row">
                                     <label>
-                                        ТЕЛЕФОН
-                                        <input class="input-default" type="text">
+                                        <span>ТЕЛЕФОН</span>
+                                        <input class="input-default" type="text" required>
                                         <div class="regContact__inner-btns">
-                                            <div class="regContact__inner-text">
+                                            <div class="regContact__inner-text" id="text-phone">
                                                 На этот номер отправлено СМС с кодом подтверждения
                                             </div>
-                                            <button class="btn-confirm button-default"type="submit">Подтвердить</button>
+                                            <button class="btn-confirm__phone btn-confirm button-default" type="button">Подтвердить</button>
                                         </div>  
                                     </label>
-                                    <label class="input-disable">
-                                        Код из СМС
+                                    <label class="phone__code input-disable">
+                                        <span>Код из СМС</span>
                                         <div class="regContact__inner-block">
-                                            <input class="input-default" type="text" readonly>
+                                            <input class="confirm-phone input-default" type="text" readonly required>
                                         </div>
                                         <div class="regContact__inner-btns">
                                             <div class="regContact__inner-timer">
                                                 Выслать снова через:<span>43 с.</span>
                                             </div>
-                                            <button type="submit">Выслать повторно</button>
-                                            <button class="btn-confirm button-default"type="submit">Подтвердить</button>
+                                            <button class="btn-replay" type="submit">Выслать повторно</button>
+                                            <button class="btn-confirm btn-confirm-check--phone button-default"type="submit" disabled>Подтвердить</button>
                                         </div>  
                                     </label>
                                 </div>
                                 <div class="regContact__inner-row">
                                     <label>
-                                        E-MAIL
-                                        <input class="input-default" type="email">
+                                        <span>E-MAIL</span>
+                                        <input class="input-default" type="email" required>
                                         <div class="regContact__inner-btns">
-                                            <div class="regContact__inner-text">
+                                            <div class="regContact__inner-text" id="text-email">
                                                 На этот E-mail отправлено сообщение с кодом подтверждения
                                             </div>
-                                            <button class="btn-confirm button-default"type="submit">Подтвердить</button>
+                                            <button class="btn-confirm__email btn-confirm button-default" type="button">Подтвердить</button>
                                         </div>  
                                     </label>
-                                    <label class="input-disable">
-                                        Код из сообщения
+                                    <label class="email-code input-disable">
+                                        <span>Код из сообщения</span>
                                         <div class="regContact__inner-block">
-                                            <input class="input-default" type="text" readonly>
+                                            <input class="confirm-mail input-default" type="text" readonly required>
                                         </div>
                                         <div class="regContact__inner-btns">
                                             <div class="regContact__inner-timer">
                                                 Выслать снова через:<span>43 с.</span>
                                             </div>
-                                            <button type="submit">Выслать повторно</button>
-                                            <button type="submit">Подтвердить</button>
+                                            <button class="btn-replay" type="submit">Выслать повторно</button>
+                                            <button class="btn-confirm btn-confirm-check--email button-default" type="submit" disabled>Подтвердить</button>
                                         </div>  
                                         
                                     </label>
                                 </div>
-                                <div class="regContact__inner-row">
-                                    <button type="submit">Назад</button>
-                                    <button type="submit">Далее</button>
+                                <div class="regContact__inner-row regContact__inner-row--bottom">
+                                    <a class="button-default" href="#">Назад</a>
+                                    <a class="button-default" href="#">Далее</a>
                                 </div>
                             </form>
                         </div>
