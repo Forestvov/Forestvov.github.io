@@ -34,7 +34,7 @@
                             <a href="#">ВЫГОДЫ И ПРЕИМУЩЕСТВА</a>
                             <a href="#">ВОПРОСЫ И ОТВЕТЫ</a>
                             <a href="#">КОНТАКТЫ </a>
-                            <button>ВОЙТИ В КЛУБ</button>
+                            <button data-fancybox data-src="#hidden-content" href="javascript:;">ВОЙТИ В КЛУБ</button>
                         </nav>
                     </div>
                 </div>
@@ -320,6 +320,23 @@
                 </div>
             </div>
         </footer> 
+    </div>
+    <div class="login-form" style="display: none;" id="hidden-content">
+        <div class="login-form-title">
+            ВХОД
+        </div>
+        <div class="login-form-link">
+            <span>Нет личного кабинет?</span>
+            <a href="#">Зарегистрируйтесь</a>
+        </div>
+        <div class="login-form__inner">
+            <form>
+                <input class="rfield" type="text" placeholder="Логин" required>
+                <input class="rfield" type="password" placeholder="Пароль" required>
+                <a href="#">Забыл пароль?</a>
+                <button type="submit" id="login">Войти</button>
+            </form>
+        </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
