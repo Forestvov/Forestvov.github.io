@@ -34,29 +34,58 @@
                             <a href="#">ВЫГОДЫ И ПРЕИМУЩЕСТВА</a>
                             <a href="#">ВОПРОСЫ И ОТВЕТЫ</a>
                             <a href="#">КОНТАКТЫ </a>
-                            <button>ВОЙТИ В КЛУБ</button>
+                            <button class="header__menu-user">КУЛАКОВ Н.Д. <img src="images/avater.png" alt="avatar">
+                            </button>
                         </nav>
                     </div>
                 </div>
             </header>
-   
+            <button class="button-default" data-fancybox data-src="#balance-error" href="javascript:;">Teтовая</button>
+            <section class="replenish">
+                <div class="container">
+                    <div class="replenish__inner">
+                        <form>
+                            <div class="replenish__inner-title">
+                                ВЫБЕРИТЕ СПОСОБА ПОПОЛНЕНИЯ
+                            </div>
+                            <div class="replenish__inner-row">
+                                <button type="button"><img src="images/banks/sber.png" alt="sber"> Сбербанк
+                                    Онлайн</button>
+                                <button type="button"><img src="images/banks/qiwi.png" alt="qiwi"> QIWI Кошелёк</button>
+                            </div>
+                            <div class="replenish__inner-title replenish__inner-title--second">
+                                ПОПОЛНЕНИЕ ЛИЦЕВОГО СЧЁТА
+                            </div>
+                            <div class="replenish__inner-input">
+                                <input type="number" required>
+                                <img src="images/rub.png" alt="rub">
+                            </div>
+                            <div class="replenish__inner-text">
+                                <span>КОМИССИЯ:</span>
+                                <span>20 руб.</span>
+                            </div>
+                            <div class="replenish__inner-text">
+                                <span>ИТОГО:</span>
+                                <span class="replenish__inner-total">
+                                    1520
+                                    <img src="images/mini-rub.png" alt="rub">
+                                </span>
+                            </div>
+                            <div class="replenish__inner-btn">
+                                <button class="button-default" data-fancybox data-src="#balance" href="javascript:;">Пополнить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
 
 
-
-
-
-
-
-
-
-
-
-
+           
 
 
         </div>
 
-         <footer class="footer" style="background-image: url(images/footer/footer-bg.png);">
+        <footer class="footer" style="background-image: url(images/footer/footer-bg.png);">
             <div class="container-fluid">
                 <div class="footer__inner">
                     <a class="footer__inner-logo" href="#"><img src="images/logo.png" alt="logo"></a>
@@ -78,11 +107,36 @@
                     </ul>
                 </div>
             </div>
-        </footer> 
+        </footer>
     </div>
+
+
+
+    <div class="balance" style="display: none;" id="balance">
+        <div class="balance-title">
+            <img src="images/true.png" alt="true">
+            <span>УСПЕШНО</span>
+        </div>
+        <div class="balance-btn">
+            <button class="button-default" type="submit" data-fancybox-close>Продолжить</button>
+        </div>
+    </div>
+    <div class="balance" style="display: none;" id="balance-error">
+        <div class="balance-title">
+            <img src="images/error.png" alt="error">
+            <span>ошибка</span>
+        </div>
+        <div class="balance-btn">
+            <button class="button-default" type="submit" data-fancybox-close>Продолжить</button>
+        </div>
+    </div>
+
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
+
 </html>

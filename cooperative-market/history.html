@@ -34,13 +34,44 @@
                             <a href="#">ВЫГОДЫ И ПРЕИМУЩЕСТВА</a>
                             <a href="#">ВОПРОСЫ И ОТВЕТЫ</a>
                             <a href="#">КОНТАКТЫ </a>
-                            <button>ВОЙТИ В КЛУБ</button>
+                            <button class="header__menu-user">
+                                КУЛАКОВ Н.Д.
+                                <img src="images/avater.png" alt="avatar">
+                                <ul class="menu-user">
+                                    <li><a href="#">Настройки</a></li>
+                                    <li><a href="#">Выход</a></li>
+                                </ul>
+                            </button>
                         </nav>
                     </div>
                 </div>
             </header>
-   
 
+            <section class="history">
+                <div class="container">
+                    <h3 class="history__title main-title">
+                        История заказов
+                    </h3>
+                    <div class="history__inner">
+                        <table class="history__table">
+                            <tbody>
+                                <tr class="history__table-row">
+                                    <td>Выполнен</td>
+                                    <td class="history__table-date">Дата: 01.01.2020 Время 19:35</td>
+                                    <td class="history__table-number">Заказ №0401509</td>
+                                    <td class="history__table-save"><a href="#"><img src="images/save-document.png" alt="save"></a></td>
+                                </tr>
+                                <tr class="history__table-row">
+                                    <td>Оплачен, формируется к выдаче</td>
+                                    <td class="history__table-date">Дата: 01.01.2020 Время 19:35</td>
+                                    <td class="history__table-number">Заказ №0401509</td>
+                                    <td class="history__table-save"><a href="#"><img src="images/save-document.png" alt="save"></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
 
 
 
@@ -56,7 +87,7 @@
 
         </div>
 
-         <footer class="footer" style="background-image: url(images/footer/footer-bg.png);">
+        <footer class="footer" style="background-image: url(images/footer/footer-bg.png);">
             <div class="container-fluid">
                 <div class="footer__inner">
                     <a class="footer__inner-logo" href="#"><img src="images/logo.png" alt="logo"></a>
@@ -78,11 +109,12 @@
                     </ul>
                 </div>
             </div>
-        </footer> 
+        </footer>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
+
 </html>
