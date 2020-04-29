@@ -52,14 +52,19 @@
                         <form>
                             <ul class="accordion" data-accordion="open">
                                 <li>
-                                    <div class="accordion-header">
-                                        <span>1</span>
+                                    <div class="accordion-header true">
+                                        <span>
+                                            1
+                                            <div class="accordion-header-icon">
+                                                <img src="images/valid.png" alt="true">
+                                            </div>
+                                        </span>
                                         Товары в заказе
                                         <button class="sell__inner-edit" type="button">изменить</button>
                                     </div>
                                     <div class="accordion-body">
                                         <div class="sell__inner-row">
-                                            <div class="sell__inner-images">
+                                            <div class="sell__inner-img">
                                                 <img src="images/product.png" alt="poruct">
                                             </div>
                                             <div class="sell__inner-info">
@@ -78,7 +83,7 @@
                                             </div>
                                         </div>
                                         <div class="sell__inner-btns">
-                                            <button>Назад</button>
+                                            <button class="sell__inner-next">Далее</button>
                                         </div>
                                     </div>
                                 </li>
@@ -86,7 +91,7 @@
                                     <div class="accordion-header">
                                         <span>2</span>
                                         Регион доставки
-                                        <button>изменить</button>
+                                        <button class="sell__inner-edit" type="button">изменить</button>
                                     </div>
                                     <div class="accordion-body">
                                         <div class="sell__inner-region">
@@ -94,8 +99,10 @@
                                                 <div class="sell__inner-text">
                                                     Тип плательщика
                                                 </div>
-                                                <span class="sell__inner-button"><input class="sellRad" type="radio" id="sellRad" name="face">Физическое лицо</span>
-                                                <span class="sell__inner-button"><input class="sellRad" type="radio" id="sellRad" name="face">Юридическое лицо</span>
+                                                <span class="sell__inner-button"><input class="sellRad" type="radio"
+                                                        id="sellRad" name="face">Физическое лицо</span>
+                                                <span class="sell__inner-button"><input class="sellRad" type="radio"
+                                                        id="sellRad" name="face">Юридическое лицо</span>
                                             </div>
                                             <div class="sell__inner-address">
                                                 <label>
@@ -117,7 +124,7 @@
                                         </div>
                                         <div class="sell__inner-btns">
                                             <button>Назад</button>
-                                            <button>Далее</button>
+                                            <button class="sell__inner-next">Далее</button>
                                         </div>
 
                                     </div>
@@ -126,17 +133,19 @@
                                     <div class="accordion-header">
                                         <span>3</span>
                                         Доставка
-                                        <button>изменить</button>
+                                        <button class="sell__inner-edit" type="button">изменить</button>
                                     </div>
                                     <div class="accordion-body">
                                         <div class="sell__inner-row">
                                             <label class="sell__inner-images">
                                                 <input class="sell__inner-check" type="checkbox">
                                                 <img src="images/car.png" alt="car">
+                                                <span class="car-price">500 руб.</span>
                                             </label>
                                             <label class="sell__inner-images">
                                                 <input class="sell__inner-check" type="checkbox">
                                                 <img src="images/car-2.png" alt="car">
+                                                <span class="car-price">0 руб.</span>
                                             </label>
                                             <div class="sell__inner-box">
                                                 <div class="sell__inner-textprice">
@@ -150,7 +159,7 @@
                                         </div>
                                         <div class="sell__inner-btns">
                                             <button>Назад</button>
-                                            <button>Далее</button>
+                                            <button class="sell__inner-next">Далее</button>
                                         </div>
                                     </div>
                                 </li>
@@ -159,22 +168,22 @@
                                     <div class="accordion-header">
                                         <span>4</span>
                                         Оплата
-                                        <button>изменить</button>
+                                        <button class="sell__inner-edit" type="button">изменить</button>
                                     </div>
                                     <div class="accordion-body">
                                         <div class="sell__inner-row">
-                                            <label>
+                                            <label class="sell__inner-images sell__inner-images--bank">
                                                 <input class="sell__inner-check" type="checkbox">
                                                 <img src="images/sber.png" alt="sber">
                                             </label>
-                                            <label>
+                                            <label class="sell__inner-images sell__inner-images--bank">
                                                 <input class="sell__inner-check" type="checkbox">
                                                 <img src="images/qiwi.png" alt="qiwi">
                                             </label>
                                         </div>
                                         <div class="sell__inner-btns">
                                             <button>Назад</button>
-                                            <button>Далее</button>
+                                            <button class="sell__inner-next">Далее</button>
                                         </div>
                                     </div>
                                 </li>
@@ -182,21 +191,21 @@
                                     <div class="accordion-header">
                                         <span>5</span>
                                         Пайщик
-                                        <button>изменить</button>
+                                        <button class="sell__inner-edit" type="button">изменить</button>
                                     </div>
                                     <div class="accordion-body">
                                         <div class="sell__inner-contacts">
                                             <label>
                                                 <span><sup>*</sup>ФИО</span>
-                                                <input type="text">
+                                                <input class="input-default" type="text">
                                             </label>
                                             <label>
                                                 <span><sup>*</sup>E-Mail</span>
-                                                <input type="text">
+                                                <input class="input-default" type="text">
                                             </label>
                                             <label>
                                                 <span><sup>*</sup>Телефон</span>
-                                                <input type="text">
+                                                <input class="input-default" type="text">
                                             </label>
                                             <label>
                                                 <span><sup>*</sup>Адрес доставки</span>
@@ -212,10 +221,24 @@
                                         </div>
                                     </div>
                                 </li>
-
-
                             </ul>
                         </form>
+                        <div class="sell__box">
+                            <div class="sell__box-row">
+                                Товаров на:
+                                <span>3 120,17 руб.</span>
+                            </div>
+                            <div class="sell__box-row">
+                                Доставка:
+                                <span>500,17 руб.</span>
+                            </div>
+                            <div class="sell__box-price">
+                                К оплате:
+                                <span>
+                                    3620,56 руб.
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
