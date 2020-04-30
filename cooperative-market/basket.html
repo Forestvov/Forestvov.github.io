@@ -29,21 +29,55 @@
                             </svg>
                         </div>
                         <nav class="header__menu">
-                            <div class="header__menu-inner">
-                                <a href="#">О КЛУБЕ</a>
-                                <a href="#">НОВОСТИ</a>
-                                <a href="#">СОТРУДНИЧЕСТВО</a>
-                                <a href="#">ВОПРОСЫ И ОТВЕТЫ</a>
-                                <a href="#">КОНТАКТЫ </a>
+                            <div class="header__menu-inner" id="nav-bar">
+                                <div class="header__menu-drop">
+                                    <img src="images/arrow.png" alt="arrow"> Личный кабинет
+                                    <ul class="header__menu-droplist">
+                                        <li><a href="#">Главная лк</a></li>
+                                        <li><a href="#">Настройки</a></li>
+                                        <li><a href="#">Лицевой счет</a></li>
+                                        <li><a href="#">Документы</a></li>
+                                        <li><a href="#">Клубная жизнь</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header__menu-drop">
+                                    <img src="images/arrow.png" alt="arrow"> Стол заказов
+                                    <ul class="header__menu-droplist">
+                                        <li><a href="#">Витрина</a></li>
+                                        <li><a href="#">Корзина</a></li>
+                                        <li><a href="#">Мои заказы</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <button class="header__menu-user">
-                                КУЛАКОВ Н.Д.
-                                <img src="images/avater.png" alt="avatar">
-                                <ul class="menu-user">
-                                    <li><a href="#">Настройки</a></li>
-                                    <li><a href="#">Выход</a></li>
-                                </ul>
-                            </button>
+                            <ul class="header__menu-accordion accordion" data-accordion="open">
+                                <li>
+                                    <div class="accordion-header"><img src="images/arrow.png" alt="arrow"> Личный
+                                        кабинет</div>
+                                    <div class="accordion-body">
+                                        <ul class="header__menu-droplist">
+                                            <li><a href="#">Главная лк</a></li>
+                                            <li><a href="#">Настройки</a></li>
+                                            <li><a href="#">Лицевой счет</a></li>
+                                            <li><a href="#">Документы</a></li>
+                                            <li><a href="#">Клубная жизнь</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="accordion-header"><img src="images/arrow.png" alt="arrow">Стол заказов</div>
+                                    <div class="accordion-body">
+                                        <ul class="header__menu-droplist">
+                                            <li><a href="#">Витрина</a></li>
+                                            <li><a href="#">Корзина</a></li>
+                                            <li><a href="#">Мои заказы</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                            </ul>
+                            <div class="header__menu-btn">
+                                <button>Выйти</button>
+                            </div>
                         </nav>
                     </div>
                 </div>
