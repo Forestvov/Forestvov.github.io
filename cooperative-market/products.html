@@ -47,18 +47,43 @@
             <section class="products">
                 <div class="container">
                     <h3 class="products__title main-title">
-                        Торговая площадка 
+                        Торговая площадка
                     </h3>
                     <div class="products__inner">
                         <div class="products__inner-top">
-
+                            <div class="products__inner-filter">
+                                <span>Сортировать по</span>
+                                <ul class="products__inner-filterlist products__filter">
+                                    <li><button>Стоимость</button></li>
+                                    <li><button>Название</button></li>
+                                    <li class="products__filter-btn">
+                                        <button>По цене</button>
+                                        <button class="products__filter-top">
+                                            <img src="images/arrow-filter-top.png" alt="arrow">
+                                        </button>
+                                        <button class="products__filter-bottom">
+                                            <img src="images/arrow-filter-bottom.png" alt="arrow">
+                                        </button>
+                                    </li>
+                                    <li class="products__filter-btn">
+                                        <button>По возрастанию</button>
+                                        <button class="products__filter-top">
+                                            <img src="images/arrow-filter-top.png" alt="arrow">
+                                        </button>
+                                        <button class="products__filter-bottom">
+                                            <img src="images/arrow-filter-bottom.png" alt="arrow">
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="products__inner-body">
                             <aside class="products__inner-aside">
                                 <form>
                                     <ul class="accordion" data-accordion="open">
                                         <li>
-                                            <div class="accordion-header"><img src="images/arrow.png" alt="arrow"> Производитель</div>
+                                            <div class="accordion-header"><img src="images/arrow.png" alt="arrow">
+                                                Производитель</div>
                                             <div class="accordion-body">
                                                 <ul class="products__inner-items">
                                                     <li>
@@ -89,19 +114,209 @@
                                             </div>
                                         </li>
                                         <li>
-                                            <div class="accordion-header"><img src="images/arrow.png" alt="arrow"> Цена</div>
+                                            <div class="accordion-header"><img src="images/arrow.png" alt="arrow"> Цена
+                                            </div>
                                             <div class="accordion-body">
+                                                <div class="extra-controls">
+                                                    <input type="text" class="js-input-from" value="0" />
+                                                    <span></span>
+                                                    <input type="text" class="js-input-to" value="0" />
+                                                </div>
                                                 <div class="products__inner-price">
                                                     <input type="text" class="js-range-slider" name="price__range"
                                                         value="" />
                                                 </div>
                                             </div>
                                         </li>
+                                        <li>
+                                            <div class="accordion-header">
+                                                <label class="products__inner-item products__inner-item--single">
+                                                    <input class="products__inner-check" type="checkbox">
+                                                    Товары есть в магазине
+                                                    сейчас
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="accordion-header"><img src="images/arrow.png" alt="arrow">
+                                                Производитель</div>
+                                            <div class="accordion-body">
+                                                <ul class="products__inner-items">
+                                                    <li>
+                                                        <label class="products__inner-item">
+                                                            <input class="products__inner-check" type="checkbox">
+                                                            Monolith
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="products__inner-item">
+                                                            <input class="products__inner-check" type="checkbox">
+                                                            Monolith
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="products__inner-item">
+                                                            <input class="products__inner-check" type="checkbox">
+                                                            Monolith
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="products__inner-item">
+                                                            <input class="products__inner-check" type="checkbox">
+                                                            Monolith
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="accordion-header"><img src="images/arrow.png" alt="arrow">
+                                                Производитель</div>
+                                            <div class="accordion-body">
+                                                <ul class="products__inner-items">
+                                                    <li>
+                                                        <label class="products__inner-item">
+                                                            <input class="products__inner-check" type="checkbox">
+                                                            Monolith
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="products__inner-item">
+                                                            <input class="products__inner-check" type="checkbox">
+                                                            Monolith
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="products__inner-item">
+                                                            <input class="products__inner-check" type="checkbox">
+                                                            Monolith
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="products__inner-item">
+                                                            <input class="products__inner-check" type="checkbox">
+                                                            Monolith
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="accordion-header"><img src="images/arrow.png" alt="arrow">
+                                                Производитель</div>
+                                            <div class="accordion-body">
+                                                <ul class="products__inner-items">
+                                                    <li>
+                                                        <label class="products__inner-item">
+                                                            <input class="products__inner-check" type="checkbox">
+                                                            Monolith
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="products__inner-item">
+                                                            <input class="products__inner-check" type="checkbox">
+                                                            Monolith
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="products__inner-item">
+                                                            <input class="products__inner-check" type="checkbox">
+                                                            Monolith
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="products__inner-item">
+                                                            <input class="products__inner-check" type="checkbox">
+                                                            Monolith
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </form>
                             </aside>
                             <div class="products__inner-list">
-
+                                <div class="product__inner-block">
+                                    <div class="product__inner-images" style=""></div>
+                                    <div class="product__inner-row">
+                                        <div class="product__inner-name">
+                                            <span>Сметана 15%</span>
+                                            <span>(240 гр.)</span>
+                                        </div>
+                                        <div class="product__inner-price">
+                                            60
+                                            <img src="images/rub.png" alt="rub">
+                                        </div>
+                                    </div>
+                                    <div class="product__inner-author">
+                                        <span>Производитель:</span>
+                                        <span>ГК «Двинские традиции»</span>
+                                    </div>
+                                    <div class="product__inner-add">
+                                        <button data-fancybox data-src="#hidden-empty" href="javascript:;">Добавить в корзину</button>
+                                    </div>
+                                </div>
+                                <div class="product__inner-block">
+                                    <div class="product__inner-images" style=""></div>
+                                    <div class="product__inner-row">
+                                        <div class="product__inner-name">
+                                            <span>Сметана 15%</span>
+                                            <span>(240 гр.)</span>
+                                        </div>
+                                        <div class="product__inner-price">
+                                            60
+                                            <img src="images/rub.png" alt="rub">
+                                        </div>
+                                    </div>
+                                    <div class="product__inner-author">
+                                        <span>Производитель:</span>
+                                        <span>ГК «Двинские традиции»</span>
+                                    </div>
+                                    <div class="product__inner-add">
+                                        <button data-fancybox data-src="#hidden-purchase" href="javascript:;">Добавить в корзину</button>
+                                    </div>
+                                </div>
+                                <div class="product__inner-block">
+                                    <div class="product__inner-images" style=""></div>
+                                    <div class="product__inner-row">
+                                        <div class="product__inner-name">
+                                            <span>Сметана 15%</span>
+                                            <span>(240 гр.)</span>
+                                        </div>
+                                        <div class="product__inner-price">
+                                            60
+                                            <img src="images/rub.png" alt="rub">
+                                        </div>
+                                    </div>
+                                    <div class="product__inner-author">
+                                        <span>Производитель:</span>
+                                        <span>ГК «Двинские традиции»</span>
+                                    </div>
+                                    <div class="product__inner-add">
+                                        <button>Добавить в корзину</button>
+                                    </div>
+                                </div>
+                                <div class="product__inner-block">
+                                    <div class="product__inner-images" style=""></div>
+                                    <div class="product__inner-row">
+                                        <div class="product__inner-name">
+                                            <span>Сметана 15%</span>
+                                            <span>(240 гр.)</span>
+                                        </div>
+                                        <div class="product__inner-price">
+                                            60
+                                            <img src="images/rub.png" alt="rub">
+                                        </div>
+                                    </div>
+                                    <div class="product__inner-author">
+                                        <span>Производитель:</span>
+                                        <span>ГК «Двинские традиции»</span>
+                                    </div>
+                                    <div class="product__inner-add">
+                                        <button>Добавить в корзину</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -144,6 +359,39 @@
             </div>
         </footer>
     </div>
+
+
+
+
+    <div class="hidden-empty" style="display: none;" id="hidden-empty">
+        <div class="hidden-empty__title">
+            ИЗВИНИТЕ, НО ТОВАР ЗАКОНЧИЛСЯ
+        </div>
+        <div class="hidden-empty__btn">
+            <button data-fancybox-close >Продолжить покупки</button>
+        </div>
+    </div>
+    <div class="hidden-purchase" style="display: none;" id="hidden-purchase">
+        <div class="hidden-purchase-title">
+            ТОВАР ДОБАВЛЕН В КОРЗИНУ
+        </div>
+        <div class="hidden-purchase__link">
+            <a href="#">Перейти к оформлению</a>
+        </div>
+        <div class="hidden-purchase__btn">
+            <button data-fancybox-close >Продолжить покупки</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>

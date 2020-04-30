@@ -18,26 +18,70 @@
                 <div class="container-fluid">
                     <div class="header__inner">
                         <div class="header__logo"><a href="#"><img src="images/logo.png" alt="logo"></a></div>
-
+                        <div class="header__burger">
+                            <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80"
+                                onclick="this.classList.toggle('active')">
+                                <path class="line top"
+                                    d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                                <path class="line middle" d="m 30,50 h 40" />
+                                <path class="line bottom"
+                                    d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                            </svg>
+                        </div>
                         <nav class="header__menu">
-                            <div class="header__menu-inner">
-                                <a href="#">О КЛУБЕ</a>
-                                <a href="#">НОВОСТИ</a>
-                                <a href="#">СОТРУДНИЧЕСТВО</a>
-                                <a href="#">ВОПРОСЫ И ОТВЕТЫ</a>
-                                <a href="#">КОНТАКТЫ </a>
+                            <div class="header__menu-inner" id="nav-bar">
+                                <div class="header__menu-drop">
+                                    <img src="images/arrow.png" alt="arrow"> Личный кабинет
+                                    <ul class="header__menu-droplist">
+                                        <li><a href="#">Главная лк</a></li>
+                                        <li><a href="#">Настройки</a></li>
+                                        <li><a href="#">Лицевой счет</a></li>
+                                        <li><a href="#">Документы</a></li>
+                                        <li><a href="#">Клубная жизнь</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header__menu-drop">
+                                    <img src="images/arrow.png" alt="arrow"> Личный кабинет
+                                    <ul class="header__menu-droplist">
+                                        <li><a href="#">Главная лк</a></li>
+                                        <li><a href="#">Настройки</a></li>
+                                        <li><a href="#">Лицевой счет</a></li>
+                                        <li><a href="#">Документы</a></li>
+                                        <li><a href="#">Клубная жизнь</a></li>
+                                    </ul>
+                                </div>
                             </div>
+                            <ul class="header__menu-accordion accordion" data-accordion="open">
+                                <li>
+                                    <div class="accordion-header"><img src="images/arrow.png" alt="arrow"> Личный
+                                        кабинет</div>
+                                    <div class="accordion-body">
+                                        <ul class="header__menu-droplist">
+                                            <li><a href="#">Главная лк</a></li>
+                                            <li><a href="#">Настройки</a></li>
+                                            <li><a href="#">Лицевой счет</a></li>
+                                            <li><a href="#">Документы</a></li>
+                                            <li><a href="#">Клубная жизнь</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="accordion-header"><img src="images/arrow.png" alt="arrow"> Личный
+                                        кабинет</div>
+                                    <div class="accordion-body">
+                                        <ul class="header__menu-droplist">
+                                            <li><a href="#">Главная лк</a></li>
+                                            <li><a href="#">Настройки</a></li>
+                                            <li><a href="#">Лицевой счет</a></li>
+                                            <li><a href="#">Документы</a></li>
+                                            <li><a href="#">Клубная жизнь</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                            </ul>
                             <div class="header__menu-btn">
-                                <button class="header__menu-user">
-                                    КУЛАКОВ Н.Д.  <img src="images/avater.png" alt="avatar"> 
-                                </button>
-                                <ul class="header__menu-list" style="background-image: url(images/form-bg.png);">
-                                    <li><a href="#">Каталог товаров</a></li>
-                                    <li><a href="#">Корзина</a></li>
-                                    <li><a class="active" href="#">Баланс</a></li>
-                                    <li><a href="#">Настройки</a></li>
-                                    <li class="user__exit"><button>Выйти из аккаунта</button></li>
-                                </ul>
+                                <button>Выйти</button>
                             </div>
 
                         </nav>
@@ -68,7 +112,7 @@
                         <div class="lc__inner-contributions">
                             <div class="lc__inner-contribution">
                                 <div class="lc__inner-title">
-                                    Вступительный взнос 
+                                    Вступительный взнос
                                 </div>
                                 <div class="lc__inner-money">
                                     2456,78 <span><img src="images/rub.png" alt="rub"></span>
@@ -76,7 +120,7 @@
                             </div>
                             <div class="lc__inner-contribution lc__inner-contribution--second">
                                 <div class="lc__inner-title">
-                                    Вступительный взнос 
+                                    Вступительный взнос
                                 </div>
                                 <div class="lc__inner-money">
                                     2456,78 <span><img src="images/rub.png" alt="rub"></span>
@@ -84,7 +128,7 @@
                             </div>
                             <div class="lc__inner-contribution lc__inner-contribution--last">
                                 <div class="lc__inner-title">
-                                    Вступительный взнос 
+                                    Вступительный взнос
                                 </div>
                                 <div class="lc__inner-money">
                                     2456,78 <span><img src="images/rub.png" alt="rub"></span>
